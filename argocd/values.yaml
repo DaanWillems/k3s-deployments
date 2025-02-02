@@ -1,1 +1,2 @@
-namespaceOverride: argocd
+argocd:
+  namespaceOverride: argocd
