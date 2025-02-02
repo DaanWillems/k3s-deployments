@@ -17,3 +17,5 @@ spec:
     path: argocd
     repoURL: https://github.com/DaanWillems/k3s-deployments
     targetRevision: HEAD
+  syncPolicy:
+      automated: {}
