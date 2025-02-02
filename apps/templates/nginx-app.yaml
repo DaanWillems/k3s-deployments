@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  labels:
-    argocd.argoproj.io/instance: nginx-app
   name: nginx-app 
   namespace: ingress-nginx
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
     namespace: ingress-nginx
